@@ -1,2 +1,3 @@
 # Ark 
-![A discord bot.](imgs/pfp.jpg)
+#### A discord bot written in python.
+<img src="imgs/pfp.jpg"> 
