@@ -1,3 +1,2 @@
 # Ark 
-A discord bot. 
-![](imgs/pfp.jpg)
+![A discord bot.](imgs/pfp.jpg)
