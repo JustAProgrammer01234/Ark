@@ -13,7 +13,6 @@ ark = commands.Bot(
     description="A discord bot.",
     test_guilds=guilds,
     intents=intents,
-    sync_commands = True,
     activity=disnake.Game("Type /"),
     status=disnake.Status.dnd 
 )
