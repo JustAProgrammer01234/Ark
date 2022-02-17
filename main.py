@@ -43,6 +43,7 @@ async def botinfo(inter):
         description=description,
         color=disnake.Colour(value=color)
     )
+    embed.set_thumbnail(ark.user.avatar)
     await inter.response.send_message(embed=embed)
 
 ark.run(os.getenv("TOKEN"))
