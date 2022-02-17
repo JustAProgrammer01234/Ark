@@ -39,10 +39,8 @@ async def ping(inter):
 @ark.slash_command(description="Sends info about the bot.")
 async def botinfo(inter):
     info = await ark.application_info()
-    description = f"Owner: {info.owner}\nBot ID: {ark.user.id}"
     embed = disnake.Embed(
         title="Some info about me:",
-        description=description,
         color=disnake.Colour(value=color)
     )
     embed.add_field(name="Owner:", value=info.owner)
