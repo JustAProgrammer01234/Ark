@@ -44,11 +44,11 @@ async def botinfo(inter):
         title="Some info about me:",
         color=disnake.Colour(value=color)
     )
-    embed.add_field(name="Owner:", value=info.owner)
-    embed.add_field(name="Bot ID:", value=bot_user.id)
-    embed.add_field(name="Created at:", value=disnake.utils.format_dt(bot_user.created_at, style="F"))
-    embed.add_field(name="Servers I'm in:", value=len(ark.guilds))
-    embed.add_field(name="Current number of commands:", value=len(ark.slash_commands))
+    embed.add_field(name="Owner:", value=info.owner, inline=False)
+    embed.add_field(name="Bot ID:", value=bot_user.id, inline=False)
+    embed.add_field(name="Created at:", value=disnake.utils.format_dt(bot_user.created_at, style="F"), inline=False)
+    embed.add_field(name="Servers I'm in:", value=len(ark.guilds), inline=False)
+    embed.add_field(name="Current number of commands:", value=len(ark.slash_commands), inline=False)
     embed.set_thumbnail(ark.user.avatar)
 
     await inter.response.send_message(embed=embed)
