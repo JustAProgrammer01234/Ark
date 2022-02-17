@@ -45,6 +45,8 @@ async def botinfo(inter):
         description=description,
         color=disnake.Colour(value=color)
     )
+    embed.add_field(name="Owner:", value=info.owner)
+    embed.add_field(name="Bot ID:", value=ark.user.id)
     embed.set_thumbnail(ark.user.avatar)
     await inter.response.send_message(embed=embed)
 
